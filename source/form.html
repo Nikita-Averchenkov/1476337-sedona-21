@@ -52,24 +52,24 @@
     <div class="specify-form__wrapper">
       <h3 class="specify-form__title">Представьтесь:</h3>
       <div class="specify-form__name">
-        <label class="introduce-form__your--name" for="name">Имя<sup>*</sup>:</label>
-        <input class="introduce-form__name--input" type="text" id="name" name="name" placeholder="Имя">
+        <label class="specify-form__your--name" for="name">Имя<sup>*</sup>:</label>
+        <input class="specify-form__name--input" type="text" id="name" name="name" placeholder="Имя">
       </div>
       <div class="specify-form__surname">
-        <label class="introduce-form__your--name" for="surname">Фамилия<sup>*</sup>:</label>
-        <input class="introduce-form__name--input" type="text" id="surname" name="name" placeholder="Фамилия">
+        <label class="specify-form__your--name" for="surname">Фамилия<sup>*</sup>:</label>
+        <input class="specify-form__name--input" type="text" id="surname" name="name" placeholder="Фамилия">
       </div>
       <div class="specify-form__patronymic">
-        <label class="introduce-form__your--name" for="patronymic">Отчество:</label>
-        <input class="introduce-form__name--input" type="text" id="patronymic" name="name" placeholder="Отчество">
+        <label class="specify-form__your--name" for="patronymic">Отчество:</label>
+        <input class="specify-form__name--input" type="text" id="patronymic" name="name" placeholder="Отчество">
       </div>
     </div>
   </section>
   <section class="contact-form">
     <h1 class="visually-hidden">Контактная информация</h1>
     <div class="contact-form__wrapper">
-      <h3 class="contact-form__title">Контактная информация:</h3>
-      <div class="contact-form_phone--number">
+      <h3 class="contact-form__contact - information user-form ">Контактная информация:</h3>
+      <div class="contact-form__phone--number">
         <label class="contact-form__your--number" for="phone">Контактный телефон<sup>*</sup>:</label>
         <input class="introduce-form__name--input" id="phone" name="number" placeholder="Введите телефон">
         <span class="phone-icon"><img src="img/phone-icon.svg" alt="Иконка"></span>
@@ -85,7 +85,7 @@
   <section class="impressions-form">
     <h1 class="visually-hidden">Впечатления</h1>
     <div class="impressions-form__wrapper">
-      <h3 class="impressions-form__title">Ваше общее впечатление:</h3>
+      <h3 class="impression-form__general - impression-user-form">Ваше общее впечатление:</h3>
       <div class="impression-form__positively">
         <input class="impression__positively--input" type="radio" id="positively" name="positively" checked>
         <label class="impression__positively--label" for="positively">Скорее положительное</label>
@@ -122,13 +122,14 @@
       </div>
     </div>
   </section>
-  <section class="emotions-form">
+  <section class="emotion-form">
     <h1 class="visually-hidden">Отправка отзыва</h1>
-    <div class="emotions-form__wrapper">
-      <label for="text" class="emotions-form__title">Опишите свои эмоции</label>
-      <textarea name="text" class="emotions-form__text" id="text" rows="10" cols="30"
-                placeholder="Опишите подробно все свои восторги"></textarea>
-      <button class="emotions-form--button" type="submit">Отправить отзыв</button>
+    <div class="emotion-form__wrapper">
+      <h2 class="emotion-form__your-emotion user-form">Опишите свои эмоции:</h2>
+      <form class="emotion-form--input" action="https://echo.htmlacademy.ru" method="POST">
+        <textarea  name="message" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+        <input class="emotion-form--button" type="button">Отправить отзыв>
+      </form>
     </div>
   </section>
 </main>
@@ -153,7 +154,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru">
         <span class="visually-hidden">HTML Academy</span>
         <img class="copyright__link-logo" src="img/copyright-logo-htmlacademy.svg" width="27" height="35"
-              alt="HTML Academy">
+             alt="HTML Academy">
       </a>
     </div>
   </div>
